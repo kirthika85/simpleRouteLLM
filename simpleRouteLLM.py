@@ -1,7 +1,10 @@
 import streamlit as st
 from routellm.controller import Controller
 
+
 st.title("RouteLLM Query Router")
+
+os.environ["LITELLM_LOG"] = "DEBUG"
 
 # Initialize RouteLLM controller
 @st.cache_resource
